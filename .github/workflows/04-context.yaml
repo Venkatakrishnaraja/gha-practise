@@ -14,5 +14,6 @@ jobs:
             echo "runid: ${{ github.run_id }}"
 
         - name: retrieve varaiables
-          run: echo "varaible value: ${{ vars.MY_VAR }}"
+          run: |
+            echo "varaible value: ${{ vars.MY_VAR }}"
         
