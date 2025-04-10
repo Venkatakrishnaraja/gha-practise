@@ -1,7 +1,7 @@
 name: 05- expressions
 
 on: 
-  push:
+  # push:
   workflow_dispatch:
     inputs:
      debug:
@@ -16,7 +16,7 @@ jobs:
       - name: '[debug] print start-up data'
         if: ${{ inputs.debug }}
         run: |
-          echo " triggered by: ${ github.event_name }}"
+          echo " triggered by: ${{ github.event_name }}"
           echo " Branch: ${{ github.ref }}"
           echo "commit SHA : $ {{ github.sha }} "
           echo "runner os: ${{ runner.os }} "
