@@ -1,6 +1,6 @@
 name: 04- contexts
-on:
-  push
+on: workflow_dispatch
+  # push
 jobs:
   echo-data:
       runs-on: ubuntu-latest
