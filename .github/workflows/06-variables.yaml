@@ -23,3 +23,21 @@ jobs:
           echo "job env var: ${{env.JOB_VAR}}"
           echo "workflow env var: ${{ env.WORKFLOW_VAR }}"
           echo "overwritten: ${{ env.OVERWRITTEN }}"
+  echo2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print variables
+        run: |
+         echo "Repo var: ${{ vars.REPOSITORY_VAR }}"
+         
+  echoprod:
+    runs-on: ubuntu-latest
+    environment: prod
+    steps:
+      - name: print vatiables
+        run: |
+         echo "Repo var: ${{ vars.REPOSITORY_VAR }}"
+         echo " environment var: ${{ var.TARGET_VAR }}"
+      
+    
+    
