@@ -8,8 +8,8 @@ jobs:
         - name: display infomration
           run: |
             echo "event name: ${{ github.events_name }} "
-            echo " ref: {{ github.ref }}"
-            echo " SHA: {{ github.sha }}"
+            echo " ref: ${{ github.ref }}"
+            echo " SHA: ${{ github.sha }}"
             echo "actor: ${{ github.actor }} "
             echo "runid: ${{ github.run_id }}"
 
