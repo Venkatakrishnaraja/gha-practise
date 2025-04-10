@@ -13,6 +13,6 @@ jobs:
             echo "actor: ${{ github.actor }} "
             echo "runid: ${{ github.run_id }}"
 
-        # - name: retrieve varaiables
-        #   run: echo "varaible value: ${{ vars.MY_VAR }}"
+        - name: retrieve varaiables
+          run: echo "varaible value: ${{ vars.MY_VAR }}"
         
