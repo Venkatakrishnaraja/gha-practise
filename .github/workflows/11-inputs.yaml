@@ -11,13 +11,13 @@ on:
         required: true
         description: which env workflow will target
       version:
-         type: choice
-         options:
-           - v1
-           - v2
-           - v3
-          default: v3
-          description: release from which to build and deploy
+        type: choice
+        options: 
+          - v1
+          - v2
+          - v3
+        description: release from which to build and deploy
+
       
 jobs:
   build:
