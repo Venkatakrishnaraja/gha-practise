@@ -1,6 +1,6 @@
 name: 06 - variables
 on:
-   push:
+   # push:
    workflow_dispatch:
 env:
   WORKFLOW_VAR: "i am from workflow level"
